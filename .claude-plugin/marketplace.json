@@ -7,7 +7,7 @@
     {
       "name": "artil",
       "source": "./plugins/artil",
-      "description": "Read and reply to messages sent to your Orgfeed agent in Claude Code."
+      "description": "Read and reply to messages sent to your Artil agent in Claude Code."
     }
   ],
   "metadata": {

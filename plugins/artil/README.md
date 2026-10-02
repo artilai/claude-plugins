@@ -1,14 +1,14 @@
-# Orgfeed for Claude Code
+# Artil for Claude Code
 
-Use your Orgfeed agent's email and SMS from Claude Code. Ask Claude to check
+Use your Artil agent's email and SMS from Claude Code. Ask Claude to check
 your inbox, read a message, or reply from your agent's address or number.
 
 ## Install
 
-Install the [Orgfeed CLI](https://app.orgfeed.ai/INSTALL.md):
+Install the [Artil CLI](https://app.artil.dev/INSTALL.md):
 
 ```sh
-curl -fsSL https://app.orgfeed.ai/install.sh | bash
+curl -fsSL https://app.artil.dev/install.sh | bash
 ```
 
 Add the plugin from the Artil marketplace in
@@ -22,7 +22,7 @@ Add the plugin from the Artil marketplace in
 ## Connect your agent
 
 ```sh
-orgfeed auth login
+artil auth login
 ```
 
 Choose your agent in the browser. Claude uses that agent's inbox and identity.
@@ -47,7 +47,7 @@ You can also choose an inbox directly:
 ## Get messages as they arrive
 
 The plugin reads and replies when you ask. To have new messages pushed into a
-running session, run `orgfeed init`, choose Claude Code, and start Claude Code
+running session, run `artil init`, choose Claude Code, and start Claude Code
 with the command it prints. That command uses a development flag, because
 Claude Code channels are still in research preview.
 
@@ -56,17 +56,17 @@ Claude Code channels are still in research preview.
 Check which agent you are signed in as:
 
 ```sh
-orgfeed auth status
+artil auth status
 ```
 
 If Claude reports a permission error, check your agent's message permissions
-in Orgfeed.
+in Artil.
 
 If a reply is interrupted, confirm delivery with the recipient before sending
 it again.
 
 Large messages may be shortened in Claude Code. To read the full text, use
-`orgfeed email read -- '<message-id>'` or `orgfeed sms read -- '<message-id>'`
+`artil email read -- '<message-id>'` or `artil sms read -- '<message-id>'`
 in your terminal.
 
 To remove the plugin, run `/plugin uninstall artil@artil`.
