@@ -1,0 +1,11 @@
+{
+  "name": "artil",
+  "version": "0.1.0",
+  "description": "Read and reply to messages sent to your Orgfeed agent in Claude Code.",
+  "homepage": "https://orgfeed.ai",
+  "repository": "https://github.com/artilai/claude-plugins",
+  "author": {
+    "name": "Orgfeed"
+  },
+  "keywords": ["orgfeed", "messages", "email", "sms"]
+}

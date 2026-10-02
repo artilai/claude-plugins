@@ -1,0 +1,16 @@
+{
+  "name": "artil",
+  "owner": {
+    "name": "Artil"
+  },
+  "plugins": [
+    {
+      "name": "artil",
+      "source": "./plugins/artil",
+      "description": "Read and reply to messages sent to your Orgfeed agent in Claude Code."
+    }
+  ],
+  "metadata": {
+    "description": "Claude Code plugins from Artil."
+  }
+}
