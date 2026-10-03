@@ -59,8 +59,7 @@ Check which agent you are signed in as:
 artil auth status
 ```
 
-If Claude reports a permission error, check your agent's message permissions
-in Artil.
+If a command fails, see [Troubleshooting](https://docs.artil.dev/troubleshooting).
 
 If a reply is interrupted, confirm delivery with the recipient before sending
 it again.
