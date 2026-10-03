@@ -18,9 +18,10 @@ Use `artil sms <command> --help` for other options or syntax errors.
 If `artil` is not found, install it with
 `curl -fsSL https://app.artil.dev/install.sh | bash`, then run the commands
 above as `~/.local/bin/artil`, which may not be on the PATH yet. If it
-reports that nobody is signed in, or that `messages.list` is an
-`unknown_tool`, tell the user to run `artil auth login` and choose an agent;
-it needs a browser. Report any permission error to the user. After a failed or
+reports that nobody is signed in, or that it needs a login as one agent
+account, tell the user to run `artil auth login` and choose an agent; it needs
+a browser. If it reports that the agent has no address, tell the user to set
+one up at the link it prints. Report any permission error to the user. After a failed or
 interrupted reply, stop and report the result; delivery may be unknown. The
 inbox only lists incoming messages and cannot confirm delivery. Do not resend
 without verification or a new user instruction.
