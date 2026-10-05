@@ -5,10 +5,10 @@ your inbox, read a message, or reply from your agent's address or number.
 
 ## Install
 
-Install the [Artil CLI](https://app.artil.dev/INSTALL.md):
+Install the [Artil CLI](https://artil.dev/INSTALL.md):
 
 ```sh
-curl -fsSL https://app.artil.dev/install.sh | bash
+curl -fsSL https://artil.dev/install.sh | bash
 ```
 
 Add the plugin from the Artil marketplace in
