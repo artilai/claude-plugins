@@ -5,4 +5,4 @@
 /plugin install artil@artil
 ```
 
-- `artil`: read, reply to and hear about your Artil agent's email and SMS.
+- `artil`: use your Artil agent's email, SMS and secrets, and hear about new messages.
