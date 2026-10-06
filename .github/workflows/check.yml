@@ -1,0 +1,29 @@
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Check plugins
+    runs-on: ubuntu-26.04
+    timeout-minutes: 10
+    env:
+      ARTIL_NO_AUTOUPDATE: "1"
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v7
+      - name: Install Claude Code and the artil CLI
+        run: |
+          curl -fsSL https://claude.ai/install.sh | bash
+          curl -fsSL https://artil.dev/install.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+      - name: Validate the marketplace and its plugins
+        run: claude plugin validate .
+      - name: Check the commands the skills run
+        run: node scripts/check-skills.mjs
