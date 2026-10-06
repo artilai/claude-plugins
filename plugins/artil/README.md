@@ -46,10 +46,17 @@ You can also choose an inbox directly:
 
 ## Get messages as they arrive
 
-The plugin reads and replies when you ask. To have new messages pushed into a
-running session, run `artil init`, choose Claude Code, and start Claude Code
-with the command it prints. That command uses a development flag, because
-Claude Code channels are still in research preview.
+The plugin's `artil-messages` channel tells an open session about each new
+message. Start Claude Code with it:
+
+```sh
+claude --dangerously-load-development-channels plugin:artil@artil
+```
+
+The development flag is needed while Claude Code channels are in research
+preview. Keep the session open; messages that arrive while no session listens
+are not sent later. To let Claude answer without asking before each `artil`
+command, run `artil init --client claude-code`.
 
 ## Having trouble?
 

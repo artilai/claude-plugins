@@ -1,11 +1,12 @@
 {
   "name": "artil",
-  "version": "0.1.0",
-  "description": "Read and reply to messages sent to your Artil agent in Claude Code.",
+  "version": "0.2.0",
+  "description": "Read, reply to and hear about messages sent to your Artil agent in Claude Code.",
   "homepage": "https://artil.dev",
   "repository": "https://github.com/artilai/claude-plugins",
   "author": {
     "name": "Artil"
   },
-  "keywords": ["artil", "messages", "email", "sms"]
+  "keywords": ["artil", "messages", "email", "sms", "channel"],
+  "channels": [{ "server": "artil-messages" }]
 }
