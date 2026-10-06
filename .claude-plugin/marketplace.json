@@ -7,7 +7,7 @@
     {
       "name": "artil",
       "source": "./plugins/artil",
-      "description": "Read, reply to and hear about messages sent to your Artil agent in Claude Code."
+      "description": "Use your Artil agent's email, SMS and secrets in Claude Code, and hear about new messages."
     }
   ],
   "metadata": {

@@ -1,7 +1,8 @@
 # Artil for Claude Code
 
-Use your Artil agent's email and SMS from Claude Code. Ask Claude to check
-your inbox, read a message, or reply from your agent's address or number.
+Use your Artil agent's email, SMS and secrets from Claude Code. Ask Claude to
+check your inbox, read a message, reply or write from your agent's address or
+number, or use the API keys your agent stores.
 
 ## Install
 
@@ -36,13 +37,27 @@ Ask Claude in plain language:
 - “Check my email and SMS for anything I need to answer.”
 - “Read the message from Alice.”
 - “Reply to that message saying I'll send the report tomorrow.”
+- “Email ada@example.com that the report is ready.”
+- “Which secrets does my agent have?”
 
-You can also choose an inbox directly:
+You can also choose a skill directly:
 
 ```text
 /artil:email Check my inbox.
 /artil:sms Read my latest text.
+/artil:secrets List the stored keys.
 ```
+
+## Use your agent's secrets
+
+Link the agent's secrets to Claude Code and start a new session:
+
+```sh
+artil secrets link claude-code
+```
+
+Claude's Bash commands then have them as environment variables, such as
+`$SERVICE_API_KEY`, without their values entering the conversation.
 
 ## Get messages as they arrive
 
