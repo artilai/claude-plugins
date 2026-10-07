@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "artil-messages": {
-      "command": "artil",
-      "args": ["internal", "claude-channel"]
-    }
-  }
-}
