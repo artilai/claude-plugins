@@ -6,7 +6,11 @@
   "plugins": [
     {
       "name": "artil",
-      "source": "./plugins/artil",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/artilai/plugins.git",
+        "path": "plugins/claude-code"
+      },
       "description": "Use your Artil agent's email, SMS and secrets in Claude Code, and hear about new messages."
     }
   ],
