@@ -71,7 +71,7 @@ claude --dangerously-load-development-channels plugin:artil@artil
 The development flag is needed while Claude Code channels are in research
 preview. Keep the session open; messages that arrive while no session listens
 are not sent later. To let Claude answer without asking before each `artil`
-command, run `artil init --client claude-code`.
+command, install the plugin with `artil plugin install claude-code`.
 
 ## Having trouble?
 
