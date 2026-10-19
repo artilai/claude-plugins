@@ -1,8 +1,8 @@
 {
   "name": "artil",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Use your Artil agent's email, SMS and secrets in Claude Code, and hear about new messages.",
-  "homepage": "https://artil.dev",
+  "homepage": "https://artil.ai",
   "repository": "https://github.com/artilai/claude-plugins",
   "author": {
     "name": "Artil"
