@@ -7,7 +7,7 @@
     {
       "name": "artil",
       "source": "./plugins/artil",
-      "description": "Use your Artil agent's email, SMS and secrets in Claude Code, and hear about new messages."
+      "description": "Email, SMS and Telegram for Claude Code. Your agent gets its own Artil inbox and phone number, reads and answers messages, and keeps API keys and 2FA codes."
     }
   ],
   "metadata": {
