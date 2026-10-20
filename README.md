@@ -5,4 +5,4 @@
 /plugin install artil@artil
 ```
 
-- `artil`: use your Artil agent's email, SMS and secrets, and hear about new messages.
+- `artil`: Email, SMS and Telegram for Claude Code. Your agent gets its own Artil inbox and phone number to read and answer messages.
